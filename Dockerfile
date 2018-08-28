@@ -11,7 +11,7 @@ RUN go build -o /bin/urlshorten
 
 FROM alpine
 COPY --from=builder /bin/urlshorten /bin/urlshorten
-#RUN mkdir -p /boltdb-data
+RUN mkdir -p /boltdb-data
 EXPOSE 8080
 ENTRYPOINT ./bin/urlshorten
 
