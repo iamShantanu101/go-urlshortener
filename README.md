@@ -5,7 +5,7 @@
 3.  HTTP router: [httprouter](https://github.com/julienschmidt/httprouter)
 4.  Logging library: [logrus](https://github.com/sirupsen/logrus)
 
-### Inpsirations
+### Inspirations
 1. https://github.com/pantrif/url-shortener
 2. https://github.com/pankajkhairnar/goShort
 3. https://github.com/xcoulon/go-url-shortener
