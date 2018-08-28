@@ -30,7 +30,7 @@
 
 1. [logrus](https://github.com/sirupsen/logrus):
    1. Structural design of logrus makes user to think really hard about the important areas of the application where logging is absolutely required.
-   2. Added beenfits while doing log analysis with tools like `ELK stack`.
+   2. Added benefits while doing log analysis with tools like `ELK stack`.
 2. [BBoltDB](https://github.com/coreos/bbolt):
    1. For an app like URL shortener it made sense to use fast in-memory KV store instead of going for relational way.
    2. BBoltDB is the fork of BoltDB and both of them are widely used.
