@@ -1,0 +1,28 @@
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: bolt-volume
+  labels:
+    type: local
+spec:
+  storageClassName: standard
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/boltdb-data"
+---    
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: bolt-volumeclaim
+  labels:
+    app: url-shortener
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
